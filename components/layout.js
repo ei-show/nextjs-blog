@@ -1,66 +1,58 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Eisho Uchikakoi'
-export const siteTitle = 'Next.js Sample Website'
+// import styles from './layout.module.css'
+import Header from '../components/header'
 
-export default function Layout({ children, home }) {
+const siteTitle = 'Offiter'
+
+export default function Layout({pageTitle, children}) {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
+        {pageTitle ? 
+          <title>{pageTitle} | {siteTitle}</title>
+          :
+          <title>{siteTitle}</title>
+        }
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
+
+      <Header siteTitle={siteTitle}/>
+
+      <nav>
+        <ul class="nav">
+          <li class="nav_item"><a class="nav_item_link" href="#">
+            <i class="fas fa-2x fa-fw fa-briefcase my_gray"></i>
+            <p class="nav_item_name">Works</p>
+          </a></li>
+          <li class="nav_item"><a class="nav_item_link" href="#">
+            <i class="fas fa-2x fa-fw fa-user my_gray"></i>
+            <p class="nav_item_name">About</p>
+          </a></li>
+          <li class="nav_item"><a class="nav_item_link" href="#">
+            <i class="fas fa-2x fa-fw fa-blog my_gray"></i>
+            <p class="nav_item_name">Blog</p>
+          </a></li>
+          <li class="nav_item"><a class="nav_item_link" href="#">
+            <i class="fas fa-2x fa-fw fa-envelope my_gray"></i>
+            <p class="nav_item_name">Contact</p>
+          </a></li>
+        </ul>
+      </nav>
+
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
-    </div>
+
+      <footer>
+        <ul class="footer_sns">
+          <li class="footer_sns_item"><a href="#" class=""><i class="fab fa-2x fa-fw fa-instagram-square my_gray"></i></a></li>
+          <li class="footer_sns_item"><a href="#" class=""><i class="fab fa-2x fa-fw fa-twitter-square my_gray"></i></a></li>
+          <li class="footer_sns_item"><a href="#" class=""><i class="fab fa-2x fa-fw fa-facebook-square my_gray"></i></a></li>
+          <li class="footer_sns_item"><a href="#" class=""><i class="fab fa-2x fa-fw fa-github-square my_gray"></i></a></li>
+        </ul>
+        <p class="copyright"><small>&copy;2020 uchikakoi-eishou</small></p>
+      </footer>
+
+    </>
   )
 }
