@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faUser, faBlog, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-import navStyles from '../components/nav.module.scss'
+import navStyles from './nav.module.scss'
 
 export default function Nav() {
     return (

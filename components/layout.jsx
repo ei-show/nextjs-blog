@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 // import styles from './layout.module.css'
-import Header from '../components/header'
-import Nav from '../components/nav'
-import Footer from '../components/footer'
+import Header from './header'
+import Nav from './nav'
+import Footer from './footer'
 
 const siteTitle = 'Offiter'
 
