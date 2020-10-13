@@ -1,0 +1,42 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Sawarabi+Mincho&display=swap');
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_title {
+    font-family: "Baloo Tamma 2", cursive;
+    color: #777;
+    display: inline-block;
+}
+
+.header_title_link {
+    &:link,
+    &:visited,
+    &:active {
+        text-decoration: none;
+        color: #777;
+    }
+}
+
+.header_img {
+    width: 100%;
+    height: 100%;
+    background: url(/public/header_img.png) center top no-repeat;
+    display: flex;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.keyvisual {
+    font-family: "Sawarabi Mincho", sans-serif;
+    display: inline-block;
+    color: #eee;
+    letter-spacing: 1rem;
+    padding: 4rem 0;
+    margin: 0 auto;
+}
