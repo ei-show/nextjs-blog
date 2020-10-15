@@ -1,9 +1,13 @@
 @charset 'utf-8';
 
 .nav {
-    width: 480px;
     position: fixed;
     bottom: 0;
+    width: 100%;
+    background-color: #ccc;
+}
+
+.nav_items {
     display: flex;
 }
 
@@ -21,4 +25,19 @@
     padding: 1rem 0;
     display: inline-block;
     width: 100%;
+}
+
+.nav_item_icon {
+    color: #777;
+}
+
+.nav_item_name {
+    font-size: 1rem;
+    color: #777;
+}
+
+@media screen and (min-width: 481px) {
+    .nav {
+        max-width: 480px;
+    }
 }
