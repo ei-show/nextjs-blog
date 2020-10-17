@@ -1,11 +1,12 @@
 @charset "utf-8";
+@import "../styles/config.scss";
 
 .body {
-    width: 480px;
+    width: $phone_width;
     margin: 0 auto;
-    background-color: #eee;
+    background-color: $gray;
 }
 
 .main {
-    
+    margin-top: 1rem;
 }
