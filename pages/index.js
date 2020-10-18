@@ -18,10 +18,11 @@ export default function Index() {
                 <p>主役はあなたです。</p>
             </div>
             <h2 className={indexStyles.main_title}>サービス内容</h2>
+            <h2 className={indexStyles.main_title}>流れ</h2>
             <div className={indexStyles.container}>
                 <div className={indexStyles.card}>
                     <div className={indexStyles.card_header}>
-                        <FontAwesomeIcon className={indexStyles.card_header_icon} icon="headset" fixedWidth />
+                        <FontAwesomeIcon className={indexStyles.card_header_icon} icon="headset" size="2x" fixedWidth />
                         <div className={indexStyles.card_header_right}>
                             <p className={indexStyles.card_title_jp}>ディレクション</p>
                             <h3 className={indexStyles.card_title}>Direction</h3>
@@ -36,7 +37,7 @@ export default function Index() {
                 </div>
                 <div className={indexStyles.card}>
                     <div className={indexStyles.card_header}>
-                        <FontAwesomeIcon className={indexStyles.card_header_icon} icon="edit" fixedWidth />
+                        <FontAwesomeIcon className={indexStyles.card_header_icon} icon="edit" size="2x" fixedWidth />
                         <div className={indexStyles.card_header_right}>
                             <p className={indexStyles.card_title_jp}>デザイン</p>
                             <h3 className={indexStyles.card_title}>Design</h3>
@@ -51,7 +52,7 @@ export default function Index() {
                 </div>
                 <div className={indexStyles.card}>
                     <div className={indexStyles.card_header}>
-                        <FontAwesomeIcon className={indexStyles.card_header_icon} icon="code" fixedWidth />
+                        <FontAwesomeIcon className={indexStyles.card_header_icon} icon="code" size="2x" fixedWidth />
                         <div className={indexStyles.card_header_right}>
                             <p className={indexStyles.card_title_jp}>コーディング</p>
                             <h3 className={indexStyles.card_title}>Coding</h3>

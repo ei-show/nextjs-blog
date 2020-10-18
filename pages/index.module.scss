@@ -31,10 +31,11 @@
 
 .card_header {
   display: flex;
-  // font-size: 1rem;
+  align-items: center;
 }
 
 .card_header_icon {
+  margin-right: 0.5rem;
 }
 
 .card_header_right {
@@ -58,5 +59,8 @@
   align-items: center;
   p {
     margin-top: 1rem;
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }
