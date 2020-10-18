@@ -1,12 +1,18 @@
-@charset "utf-8";
-@import "../styles/config.scss";
+@charset 'utf-8';
+@import '../styles/config.scss';
 
 .body {
-    width: $phone_width;
+    width: 100%;
     margin: 0 auto;
-    background-color: $gray;
+    background-color: $gray_e;
 }
 
 .main {
     margin-top: 1rem;
+}
+
+@media screen and (min-width: 481px) {
+    .body {
+        width: 480px;
+    }
 }

@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { fas, faBriefcase, faUser, faBlog, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import navStyles from './nav.module.scss'
 
@@ -12,7 +11,7 @@ export default function Nav() {
                 <li className={navStyles.nav_item}>
                     <Link href="/works">
                         <a className={navStyles.nav_item_link}>
-                            <FontAwesomeIcon className={navStyles.nav_item_icon} icon={faBriefcase} />
+                            <FontAwesomeIcon className={navStyles.nav_item_icon} icon="briefcase" size="lg" fixedWidth />
                             <p className={navStyles.nav_item_name}>Works</p>
                         </a>
                     </Link>
@@ -20,7 +19,7 @@ export default function Nav() {
                 <li className={navStyles.nav_item}>
                     <Link href="/about">
                         <a className={navStyles.nav_item_link}>
-                            <FontAwesomeIcon className={navStyles.nav_item_icon} icon={faUser} />
+                            <FontAwesomeIcon className={navStyles.nav_item_icon} icon="user" size="lg" fixedWidth />
                             <p className={navStyles.nav_item_name}>About</p>
                         </a>
                     </Link>
@@ -28,7 +27,7 @@ export default function Nav() {
                 <li className={navStyles.nav_item}>
                     <Link href="/blogs">
                         <a className={navStyles.nav_item_link}>
-                            <FontAwesomeIcon className={navStyles.nav_item_icon} icon={faBlog} />
+                            <FontAwesomeIcon className={navStyles.nav_item_icon} icon="blog" size="lg" fixedWidth />
                             <p className={navStyles.nav_item_name}>Blog</p>
                         </a>
                     </Link>
@@ -36,7 +35,7 @@ export default function Nav() {
                 <li className={navStyles.nav_item}>
                     <Link href="/contacts">
                         <a className={navStyles.nav_item_link}>
-                            <FontAwesomeIcon className={navStyles.nav_item_icon} icon={faEnvelope} />
+                            <FontAwesomeIcon className={navStyles.nav_item_icon} icon="envelope" size="lg" fixedWidth />
                             <p className={navStyles.nav_item_name}>Contact</p>
                         </a>
                     </Link>

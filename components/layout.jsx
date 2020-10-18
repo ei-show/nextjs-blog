@@ -6,7 +6,7 @@ import Footer from './footer'
 
 import layoutStyles from './layout.module.scss'
 
-const siteTitle = 'Offiter'
+const siteTitle = 'offiter'
 
 export default function Layout({ pageTitle, children }) {
   return (

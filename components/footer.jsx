@@ -11,22 +11,22 @@ export default function Footer() {
       <ul className={footerStyles.sns_items}>
         <li className={footerStyles.sns_item}>
           <Link href="/"><a>
-            <FontAwesomeIcon icon={faInstagramSquare} />
+            <FontAwesomeIcon className={footerStyles.sns_item_icon} icon={faInstagramSquare} size="lg" fixedWidth />
           </a></Link>
         </li>
         <li className={footerStyles.sns_item}>
           <Link href="/"><a>
-            <FontAwesomeIcon icon={faTwitterSquare} />
+            <FontAwesomeIcon className={footerStyles.sns_item_icon} icon={faTwitterSquare} size="lg" fixedWidth />
           </a></Link>
         </li>
         <li className={footerStyles.sns_item}>
           <Link href="/"><a>
-            <FontAwesomeIcon icon={faFacebookSquare} />
+            <FontAwesomeIcon className={footerStyles.sns_item_icon} icon={faFacebookSquare} size="lg" fixedWidth />
           </a></Link>
         </li>
         <li className={footerStyles.sns_item}>
           <Link href="/"><a>
-            <FontAwesomeIcon icon={faGithubSquare} />
+            <FontAwesomeIcon className={footerStyles.sns_item_icon} icon={faGithubSquare} size="lg" fixedWidth />
           </a></Link>
         </li>
       </ul>

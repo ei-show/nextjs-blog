@@ -10,6 +10,7 @@ export default function Index() {
         <Layout>
             <Head>
             </Head>
+
             <div className={indexStyles.main_message}>
                 <p>簡単にサービスを提供できる時代。</p>
                 <p>そのお手伝いをさせてください。</p>
@@ -19,9 +20,9 @@ export default function Index() {
             <h2 className={indexStyles.main_title}>サービス内容</h2>
             <div className={indexStyles.container}>
                 <div className={indexStyles.card}>
-                    <div className="card_header">
-                        <FontAwesomeIcon icon="headset" />
-                        <div className="card_header_right">
+                    <div className={indexStyles.card_header}>
+                        <FontAwesomeIcon className={indexStyles.card_header_icon} icon="headset" fixedWidth />
+                        <div className={indexStyles.card_header_right}>
                             <p className={indexStyles.card_title_jp}>ディレクション</p>
                             <h3 className={indexStyles.card_title}>Direction</h3>
                         </div>
@@ -34,10 +35,14 @@ export default function Index() {
                     </div>
                 </div>
                 <div className={indexStyles.card}>
-                    <p className={indexStyles.card_title_jp}>デザイン</p>
-                    <h3 className={indexStyles.card_title}>Design</h3>
-                    <FontAwesomeIcon icon="edit" />
-                    <div className={indexStyles.card_message}>
+                    <div className={indexStyles.card_header}>
+                        <FontAwesomeIcon className={indexStyles.card_header_icon} icon="edit" fixedWidth />
+                        <div className={indexStyles.card_header_right}>
+                            <p className={indexStyles.card_title_jp}>デザイン</p>
+                            <h3 className={indexStyles.card_title}>Design</h3>
+                        </div>
+                    </div>
+                    <div className={indexStyles.card_main}>
                         <p>ここで大まかな青果物が決まります。</p>
                         <p>問題は目的を達成できているか。</p>
                         <p>一緒に解決していきましょう。</p>
@@ -45,10 +50,14 @@ export default function Index() {
                     </div>
                 </div>
                 <div className={indexStyles.card}>
-                    <p className={indexStyles.card_title_jp}>コーディング</p>
-                    <h3 className={indexStyles.card_title}>Coding</h3>
-                    <FontAwesomeIcon icon="code" />
-                    <div className={indexStyles.card_message}>
+                    <div className={indexStyles.card_header}>
+                        <FontAwesomeIcon className={indexStyles.card_header_icon} icon="code" fixedWidth />
+                        <div className={indexStyles.card_header_right}>
+                            <p className={indexStyles.card_title_jp}>コーディング</p>
+                            <h3 className={indexStyles.card_title}>Coding</h3>
+                        </div>
+                    </div>
+                    <div className={indexStyles.card_main}>
                         <p>ただのコーディングではありません。</p>
                         <p>作業者目線で逆提案もあります。</p>
                         <p>カンプをもとに実際に作成。</p>
