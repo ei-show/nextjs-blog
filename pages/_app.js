@@ -11,7 +11,8 @@ import {
     faUser,
     faBlog,
     faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+    faWindowMaximize,
+} from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
 config.autoAddCss = false;
@@ -23,6 +24,7 @@ library.add(
     faUser,
     faBlog,
     faEnvelope,
+    faWindowMaximize,
 );
 
 export default function App({ Component, pageProps }) {

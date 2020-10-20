@@ -10,13 +10,22 @@
   }
 }
 
-.main_title {
-  margin-top: 2rem;
-  text-align: center;
-}
 
 .container {
   margin-top: 2rem;
+}
+
+.container_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_title_jp {
+  font-size: 0.75rem;
+}
+
+.container_title {
 }
 
 .card {
