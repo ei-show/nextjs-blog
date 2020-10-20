@@ -1,18 +1,13 @@
 import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagramSquare,
-  faTwitterSquare,
-  faFacebookSquare,
-  faGithubSquare,
-} from "@fortawesome/free-brands-svg-icons";
+import { faInstagramSquare, faTwitterSquare, faFacebookSquare, faGithubSquare, } from "@fortawesome/free-brands-svg-icons";
 
 import footerStyles from './footer.module.scss'
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className={footerStyles.footer}>
       <ul className={footerStyles.footer_sns}>
         <li className={footerStyles.footer_sns_item}>
           <Link href="/"><a>
