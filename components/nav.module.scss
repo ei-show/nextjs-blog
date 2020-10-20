@@ -1,16 +1,21 @@
 @charset 'utf-8';
+@import '../styles/config.scss';
 
 .nav {
-    width: 480px;
     position: fixed;
     bottom: 0;
+    width: 100%;
+    background-color: $gray_c;
+}
+
+.nav_items {
     display: flex;
 }
 
 .nav_item {
     flex: 1;
     text-align: center;
-    border-right: solid 2px #eee;
+    border-right: solid 2px $gray_e;
     display: inline-block;
     &:last-child {
         border-right: 0;
@@ -21,4 +26,24 @@
     padding: 1rem 0;
     display: inline-block;
     width: 100%;
+    line-height: 100%;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.nav_item_icon {
+    color: $gray_7;
+    // font-size: $p_font;
+}
+
+.nav_item_name {
+    font-size: $p_font;
+    color: $gray_7;
+}
+
+@media screen and (min-width: 481px) {
+    .nav {
+        max-width: 480px;
+    }
 }

@@ -6,11 +6,11 @@ import Footer from './footer'
 
 import layoutStyles from './layout.module.scss'
 
-const siteTitle = 'Offiter'
+const siteTitle = 'offiter'
 
 export default function Layout({ pageTitle, children }) {
   return (
-    <body className={layoutStyles.body}>
+    <div className={layoutStyles.body}>
       <Head>
         <title>{pageTitle ? `${pageTitle} | ${siteTitle}` : siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -19,6 +19,6 @@ export default function Layout({ pageTitle, children }) {
       <Nav />
       <main className={layoutStyles.main}>{children}</main>
       <Footer />
-    </body>
+    </div>
   )
 }
