@@ -37,8 +37,10 @@
 .card {
   width: 20rem;
   height: 20rem;
-  border: 0.1rem solid black;
-  border-radius: 0.5rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 16px;
+  background-color: #FAFAFC;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -49,6 +51,8 @@
 }
 
 .card_header {
+  height: 30%;
+  border-bottom: 0.1rem solid #ddd;
   display: flex;
   align-items: center;
 }
@@ -71,11 +75,22 @@
   margin-top: 1rem;
 }
 
+.card_main_rows {
+  p {
+    margin-top: 1rem;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
 .card_main {
-  margin-top: 1rem;
+  // margin-top: 1rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   p {
     margin-top: 1rem;
     &:first-child {
