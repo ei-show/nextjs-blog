@@ -11,7 +11,10 @@ import {
     faUser,
     faBlog,
     faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+    faWindowMaximize,
+    faWifi,
+} from '@fortawesome/free-solid-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
 config.autoAddCss = false;
@@ -23,6 +26,9 @@ library.add(
     faUser,
     faBlog,
     faEnvelope,
+    faWindowMaximize,
+    faWifi,
+    faYoutube,
 );
 
 export default function App({ Component, pageProps }) {
