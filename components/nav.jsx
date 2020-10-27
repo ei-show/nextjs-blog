@@ -9,10 +9,10 @@ export default function Nav() {
         <nav className={navStyles.nav}>
             <ul className={navStyles.nav_items}>
                 <li className={navStyles.nav_item}>
-                    <Link href="/works">
+                    <Link href="/work">
                         <a className={navStyles.nav_item_link}>
                             <FontAwesomeIcon className={navStyles.nav_item_icon} icon="briefcase" size="lg" fixedWidth />
-                            <p className={navStyles.nav_item_name}>Works</p>
+                            <p className={navStyles.nav_item_name}>Work</p>
                         </a>
                     </Link>
                 </li>
@@ -25,7 +25,7 @@ export default function Nav() {
                     </Link>
                 </li>
                 <li className={navStyles.nav_item}>
-                    <Link href="/blogs">
+                    <Link href="/blog">
                         <a className={navStyles.nav_item_link}>
                             <FontAwesomeIcon className={navStyles.nav_item_icon} icon="blog" size="lg" fixedWidth />
                             <p className={navStyles.nav_item_name}>Blog</p>
@@ -33,7 +33,7 @@ export default function Nav() {
                     </Link>
                 </li>
                 <li className={navStyles.nav_item}>
-                    <Link href="/contacts">
+                    <Link href="/contact">
                         <a className={navStyles.nav_item_link}>
                             <FontAwesomeIcon className={navStyles.nav_item_icon} icon="envelope" size="lg" fixedWidth />
                             <p className={navStyles.nav_item_name}>Contact</p>

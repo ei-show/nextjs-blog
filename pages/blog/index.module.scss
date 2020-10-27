@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import "../../styles/config.scss";
+
+.main_message {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  p {
+    margin-top: 1rem;
+    &:first-child {
+      margin-top: 0rem;
+    }
+  }
+}
+
+
+.container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_title_jp {
+  font-size: 0.75rem;
+}
+
+.container_title {
+}
+
+.card {
+  width: 20rem;
+  height: 20rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 16px;
+  background-color: #FAFAFC;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.card_header {
+  height: 30%;
+  border-bottom: 0.1rem solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.card_header_icon {
+  margin-right: 0.5rem;
+}
+
+.card_header_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_title_jp {
+  font-size: 0.5rem;
+}
+
+.card_icon {
+  margin-top: 1rem;
+}
+
+.card_main_rows {
+  p {
+    margin-top: 1rem;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.card_main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  td {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  p {
+    margin-top: 1rem;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

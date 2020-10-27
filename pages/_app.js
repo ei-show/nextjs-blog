@@ -1,7 +1,8 @@
-
+// common_css
 import '../styles/reset.scss';
 import '../styles/global.scss';
 
+// fontAwesome
 import { config, library } from '@fortawesome/fontawesome-svg-core';
 import {
     faHeadset,
@@ -30,6 +31,10 @@ library.add(
     faWifi,
     faYoutube,
 );
+
+// material_ui
+// import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap';
+// import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 
 export default function App({ Component, pageProps }) {
     return <Component {...pageProps} />
