@@ -1,3 +1,7 @@
+import defaultDataset from './dataset.js'
+import './assets/styles/style.css'
+
+
 export default class App extends React.Component {
     constructor(props) {
         super(props);
@@ -5,15 +9,17 @@ export default class App extends React.Component {
             answers: [],
             cats: [],
             currentId: "init",
-            dataset: {},
+            dataset: defaultDataset,
             open: false,
         }
     }
     render() {
         return (
-            <div>
-                foo
-            </div>
+            <section className="c-section">
+                <div className="c-box">
+                    foo
+                </div>
+            </section>
         )
     }
 }
