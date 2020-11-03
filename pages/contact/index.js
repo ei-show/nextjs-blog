@@ -12,7 +12,6 @@ export default function Index() {
             <Head>
             </Head>
             <App />
-            <p>foo</p>
         </Layout>
     )
 }

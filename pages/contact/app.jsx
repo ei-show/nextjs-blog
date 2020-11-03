@@ -1,5 +1,8 @@
+
 import defaultDataset from './dataset.js'
-import './assets/styles/style.css'
+// import './assets/styles/style.css'
+
+import {AnserwsList} from '../index.jsx'
 
 
 export default class App extends React.Component {
@@ -17,7 +20,7 @@ export default class App extends React.Component {
         return (
             <section className="c-section">
                 <div className="c-box">
-                    foo
+                    <AnswersList />
                 </div>
             </section>
         )
