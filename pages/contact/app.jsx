@@ -2,7 +2,7 @@
 import defaultDataset from './dataset.js'
 // import './assets/styles/style.css'
 
-import {AnswersList} from './components/index'
+import { AnswersList, Chats } from './components/index'
 
 
 export default class App extends React.Component {
@@ -10,15 +10,37 @@ export default class App extends React.Component {
         super(props);
         this.state = {
             answers: [],
-            cats: [],
+            chats: [],
             currentId: "init",
             dataset: defaultDataset,
             open: false,
         }
     }
 
+    selectAnswer = (selectedAnswer, nextQuestionId) => {
+        switch(true) {
+            case (nextQuestionId === 'init'):
+                break;
+                
+            default:
+                const chat = {
+                    text: selectedAnswer,
+                    type: 'answer'
+                }
+        
+                const chats = this.state.chats;
+                chats.push(chat)
+        
+                this.setState({
+                    chats: chats
+                })
+        
+                break;
+        }
+    }
+
     initAnswer = () => {
-        const initDataset = this.state.dataset[this.state.currentId];
+        const initDataset = this.state.dataset[this.state.currentId]
         const initAnswers = initDataset.answers;
 
         this.setState({
@@ -26,15 +48,32 @@ export default class App extends React.Component {
         })
     }
 
+    initChat = () => {
+        const initDataset = this.state.dataset[this.state.currentId]
+        const chat = {
+            text: initDataset.question,
+            type: 'question'
+        }
+
+        const chats = this.state.chats;
+        chats.push(chat)
+
+        this.setState({
+            chats: chats
+        })
+    }
+
     componentDidMount() {
-        this.initAnswer();
+        this.initChat()
+        this.initAnswer()
     }
 
     render() {
         return (
             <section className="c-section">
                 <div className="c-box">
-                    <AnswersList answers={this.state.answers}/>
+                    <Chats chats={this.state.chats} />
+                    <AnswersList answers={this.state.answers} />
                 </div>
             </section>
         )
