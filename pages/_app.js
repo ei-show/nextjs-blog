@@ -2,6 +2,9 @@
 import '../styles/reset.scss';
 import '../styles/global.scss';
 
+// contact_css
+import './contact/assets/styles/style.css';
+
 // fontAwesome
 import { config, library } from '@fortawesome/fontawesome-svg-core';
 import {
