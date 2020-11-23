@@ -10,7 +10,7 @@ const Answer = (props) => {
     // const classes = useStyles();
 
     return (
-        <Button varian="contained">
+        <Button varian="contained" onClick={() => props.select(props.content, props.nextId)}>
             {props.content}
         </Button>
     )
